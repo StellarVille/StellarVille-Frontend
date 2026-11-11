@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { PhaserWorldCanvas } from "../components/map/PhaserWorldCanvas";
 
 export default function SpectatorSponsorPage() {
   const [nudgeText, setNudgeText] = useState("");
@@ -46,25 +47,7 @@ export default function SpectatorSponsorPage() {
           gap: "1.5rem",
         }}
       >
-        <div
-          style={{
-            background: "#020617",
-            border: "2px solid #1e293b",
-            borderRadius: "12px",
-            height: "420px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <p style={{ fontSize: "1.25rem", color: "#64748b" }}>
-            🎮 [Phaser 3 Live 2D Nation Spectator Map]
-          </p>
-          <p style={{ color: "#475569", fontSize: "0.9rem" }}>
-            Capitol Building • Central Bank • Real Estate District • Agent Casino &amp; Arena
-          </p>
-        </div>
+        <PhaserWorldCanvas />
 
         {/* Sponsor Control Panel */}
         <div
